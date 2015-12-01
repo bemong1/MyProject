@@ -6,13 +6,12 @@ using namespace std;
 
 int main()
 {
+	double a, b;	
+	cin >> a >> b;	
 
-	int a = 4;
-	int b = 5;
+	CalcAdd<double> calcadd(a, b);
 
-	CalcAdd<int> calcadd(3, 4);
-
-	int result;
+	double result;
 	result = calcadd.AddRun();
 	cout << result << endl;
 

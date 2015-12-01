@@ -3,6 +3,7 @@
 template<typename T>
 class CalcAdd
 {
+	
 public:
 	T num1;
 	T num2;
