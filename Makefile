@@ -9,7 +9,7 @@ TARGET = Exec
 
 .SUFFIXES : .cpp .o
 
-all : $(TARGET)
+all: $(TARGET)
 
 $(TARGET): $(OBJS)
 	$(CC) -o $@ $(OBJS) $(LIBS)
@@ -21,7 +21,7 @@ clean:
 	rm -f $(OBJS) $(TARGET)
 
 
-Exec.o : Exec.cpp CalcAdd.h
+Exec.o: Exec.cpp CalcAdd.h
 #CalcAdd.o : CalcAdd.cpp CalcAdd.h
 # DO NOT DELETE
 Exec.o: Exec.cpp CalcAdd.hpp
