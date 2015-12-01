@@ -1,6 +1,6 @@
 CC = g++
 
-SRCS = Exec.cpp
+SRCS = Exec.cpp Intergrate.cpp
 OBJS = $(SRCS:%.cpp=%.o)
 
 LIBS = 
