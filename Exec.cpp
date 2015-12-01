@@ -1,5 +1,4 @@
-
-#include "CalcAdd.h"
+#include "Intergrate.h"
 
 using namespace std;
 
@@ -7,13 +6,12 @@ using namespace std;
 int main()
 {
 	double a, b;	
-	cin >> a >> b;	
+	char oper;
+	cin >> a >> oper >> b;	
 
-	CalcAdd<double> calcadd(a, b);
+	Intergrate intergrate(a, b, oper);
 
-	double result;
-	result = calcadd.AddRun();
-	cout << result << endl;
+	cout << intergrate.Operation() << endl;
 
 	return 0;
 
